@@ -10,3 +10,7 @@ A central goal is fostering a skillset that will make you attractive to industry
 Highlights:
 
 For up to date topic list, head to: https://docs.google.com/document/d/1t0MLp5wGniLJKrrjgrxdGhWEHAcyaEIAPu3VsWwfLjY/edit?usp=sharing
+
+## Slides
+
+You can view and edit the slides at: https://medml.github.io/code_clinic/
