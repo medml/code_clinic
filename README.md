@@ -13,4 +13,6 @@ For up to date topic list, head to: https://docs.google.com/document/d/1t0MLp5wG
 
 ## Slides
 
-You can view and edit the slides at: https://medml.github.io/code_clinic/
+You can view the slides at: https://medml.github.io/code_clinic/
+
+To edit the slides go to the file docs/index.html (Don't forget to commit your changes!)
