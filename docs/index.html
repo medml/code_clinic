@@ -6,6 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
   <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/black.css" id="theme">
+  <style>
+    .reveal h1 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 0.5em
+    }
+    .reveal p,
+    .reveal li,
+    .reveal pre {
+      text-align: left;
+    }
+  </style>
 </head>
 <body>
   <div class="reveal">
@@ -25,7 +37,7 @@ It is a tool for integrating git and allowing for collaboration.
       <section data-markdown>
         <textarea data-template>
 # How is Git Structured?
-There are three main layer:
+There are three main layers:
 1. Working Directory (Your Files)
 - where you can edit your actual code on your computer
 - files can be made, modified and deleted
@@ -85,34 +97,34 @@ Working Directory -> Staging Area -> Local Repo -> GitHub Repo
 - allows for easy import of other libraries, modules and packages
 
 Common Commands:
-          uv init -> start a new project (will auto create README, gitignore, main.py,...)
-          uv add <package name> -> install packages
-          uv run python fileName.py -> run code inside your environment
-          uv pip list -> list all packages that are installed
-          uv sync -> useful if you change python or dependency versions
+uv init -> start a new project (will auto create README, gitignore, main.py,...)
+uv add <package name> -> install packages
+uv run python fileName.py -> run code inside your environment
+uv pip list -> list all packages that are installed
+uv sync -> useful if you change python or dependency versions
         </textarea>
       </section>
       <!-- Slide 6: gitignore -->
       <section data-markdown>
         <textarea data-template>
 # What is a .gitignore File?
-          - tells Git which files NOT to track
-          - prevents these files from being accidentally committed to the repository
-          - keeps your repo clean and professional
-          - protects private information (API key, large data files)
+- tells Git which files NOT to track
+- prevents these files from being accidentally committed to the repository
+- keeps your repo clean and professional
+- protects private information (API key, large data files)
         </textarea>
       </section>   
       <!-- Slide 7: Testing -->
       <section data-markdown>
         <textarea data-template>
 # Testing Code
-  Importance:
-          - catches bugs early
-          - makes sure your code actually works
-          - keeps big projects from breaking when you change something
- Types:
-          - Unit Testing: test small sections of code (one function)
-          - Integration Testing: test how sections work together
+Importance:
+- catches bugs early
+- makes sure your code actually works
+- keeps big projects from breaking when you change something
+Types:
+- Unit Testing: test small sections of code (one function)
+- Integration Testing: test how sections work together
   YOU SHOULD ALWAYS IMPLEMENT TESTING IN YOUR CODE!
         </textarea>
       </section>
@@ -120,14 +132,14 @@ Common Commands:
       <section data-markdown>
         <textarea data-template>
 # Frontend VS Backend
-          Frontend:
-          - what the user sees and interacts with
-          - test the function of buttons, interface, links...
-          - uses languages like HTML, JavaScript and CSS
-          Backend: 
-          - what runs behind the scenes (server side)
-          - test if the functions are doing correct calculations, if the API returns the right result...
-          - uses languages like Python, Java, SQL
+Frontend:
+- what the user sees and interacts with
+- test the function of buttons, interface, links...
+- uses languages like HTML, JavaScript and CSS
+Backend: 
+- what runs behind the scenes (server side)
+- test if the functions are doing correct calculations, if the API returns the right result...
+- uses languages like Python, Java, SQL
         </textarea>
       </section>    
       <!-- Slide #: reference title -->
