@@ -9,16 +9,28 @@
   <style>
     .reveal h1 {
       text-align: center;
-      font-size: 2em;
-      margin-bottom: 0.5em
+      font-size: 1.2em;
+      color: #66ccff;
+      margin-bottom: 0.2em
     }
+    .reveal h2, .reveal h3 {
+      color: #66ccffe1;
+    }
+
     .reveal p,
     .reveal li,
     .reveal pre {
       text-align: left;
+      font-size: 0.7em;
+      line-height: 1.1em;
+    }
+    .reveal ul {
+      margin-top: 0.2em;
+      margin-bottom: 0.2em;
     }
   </style>
 </head>
+
 <body>
   <div class="reveal">
     <div class="slides">
@@ -38,23 +50,21 @@ It is a tool for integrating git and allowing for collaboration.
         <textarea data-template>
 # How is Git Structured?
 There are three main layers:
-1. Working Directory (Your Files)
+
+**Working Directory (Your Files)**
 - where you can edit your actual code on your computer
 - files can be made, modified and deleted
-- your local workspace
+- your local workspace  
 
-2. Staging Area (Index)
+**Staging Area (Index)**
 - a waiting room for your changes that you want to save
 - you add files here using git add
-- where you choose which changes to include 
+- where you choose which changes to include  
 
-3. Local Repository (.git folder)
+**Local Repository (.git folder)**
 - where Git stores your project's full history
 - created when you run git init and where your changes are saved to
-- exists only on your machine until you push it online
-
-Edit code -> git add -> git commit -> git push -> GitHub
-Working Directory -> Staging Area -> Local Repo -> GitHub Repo
+- exists only on your machine until you push it online  
         </textarea>
       </section>        
       <!-- Slide 3: Branches explained -->
@@ -63,9 +73,13 @@ Working Directory -> Staging Area -> Local Repo -> GitHub Repo
 # Branches
 - a branch is a separate line of development (a copy of your code history)
 - the default branch is Main
-- you can make new branches to test your code safely without breaking the main code
-          git checkout -b NewBranchForTesting
-- once you are confident with your changes you can merge them to Main
+- you can make new branches to test your code safely without breaking the main code  
+          **git checkout -b NewBranchForTesting** 
+
+- once you are confident with your changes you can merge them to Main  
+
+Edit code -> git add -> git commit -> git push -> GitHub  
+Working Directory -> Staging Area -> Local Repo -> GitHub Repo
         </textarea>
       </section>    
       <!-- Slide 4: Basic Git Functions -->
@@ -81,7 +95,7 @@ Working Directory -> Staging Area -> Local Repo -> GitHub Repo
 - git merge <name> :merge branch <name> into current branch
 - git add . :allows you to stage all changes
 - git pull :fetches and merges changes from the remote repo
-          Always git pull before you start working to avoid version conflict!
+<p style="color: rgb(0, 255, 204)";> Always git pull before you start working to avoid version conflict!</p>
 - git push :pushes your local commits to a remote repo
 - ...(keep adding more!)
         </textarea>
@@ -96,12 +110,12 @@ Working Directory -> Staging Area -> Local Repo -> GitHub Repo
 - makes sure your code runs the same on different machines
 - allows for easy import of other libraries, modules and packages
 
-Common Commands:
-uv init -> start a new project (will auto create README, gitignore, main.py,...)
-uv add <package name> -> install packages
-uv run python fileName.py -> run code inside your environment
-uv pip list -> list all packages that are installed
-uv sync -> useful if you change python or dependency versions
+**Common Commands:**
+- uv init -> start a new project (will auto create README, gitignore, main.py,...)
+- uv add <package name> -> install packages
+- uv run python fileName.py -> run code inside your environment
+- uv pip list -> list all packages that are installed
+- uv sync -> useful if you change python or dependency versions
         </textarea>
       </section>
       <!-- Slide 6: gitignore -->
@@ -118,28 +132,32 @@ uv sync -> useful if you change python or dependency versions
       <section data-markdown>
         <textarea data-template>
 # Testing Code
-Importance:
+
+**Importance:**
 - catches bugs early
 - makes sure your code actually works
 - keeps big projects from breaking when you change something
-Types:
+
+**Types:**  
 - Unit Testing: test small sections of code (one function)
-- Integration Testing: test how sections work together
-  YOU SHOULD ALWAYS IMPLEMENT TESTING IN YOUR CODE!
+- Integration Testing: test how sections work together  
+<p style="color:rgb(219, 80, 219);">YOU SHOULD ALWAYS IMPLEMENT TESTING IN YOUR CODE! </p>
         </textarea>
       </section>
       <!-- Slide 8: Frontend VS Backend -->
       <section data-markdown>
         <textarea data-template>
 # Frontend VS Backend
-Frontend:
+**Frontend:**
 - what the user sees and interacts with
 - test the function of buttons, interface, links...
 - uses languages like HTML, JavaScript and CSS
-Backend: 
+
+**Backend:**
 - what runs behind the scenes (server side)
 - test if the functions are doing correct calculations, if the API returns the right result...
 - uses languages like Python, Java, SQL
+
         </textarea>
       </section>    
       <!-- Slide #: reference title -->
