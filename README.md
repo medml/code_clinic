@@ -1,4 +1,5 @@
 # Code Clinic @ CBCT
+Code Clinic (CC) developed at Center for Brain Circuit Therapeutics at Harvard Medical School/Brigham and Women's Hospital in Fall 2025.
 
 ## Overview
 
